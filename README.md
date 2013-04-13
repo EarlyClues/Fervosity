@@ -17,4 +17,6 @@ Program could also return "tentative results" in the form of tarot card, i ching
 
 Also thought that during the "prayer moment" the screen could formulate random sort of pareidolic imagery which you could use to sort of divine shapes out of like an inkblot, and which would allow your mind to wander a little into the intuitive state
 
+Maybe application could also give "prescriptions" to supplicant for additional supplementary prayers which should be made (perhaps these prescriptions could go across religions too).
 
+Atheist/humanist prayer options?
