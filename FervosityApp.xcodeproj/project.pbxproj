@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE42A8101719F586003D7498 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE42A80F1719F586003D7498 /* UIKit.framework */; };
+		DE42A8121719F586003D7498 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE42A8111719F586003D7498 /* Foundation.framework */; };
+		DE42A8141719F586003D7498 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE42A8131719F586003D7498 /* CoreGraphics.framework */; };
+		DE42A81A1719F586003D7498 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE42A8181719F586003D7498 /* InfoPlist.strings */; };
+		DE42A81C1719F586003D7498 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE42A81B1719F586003D7498 /* main.m */; };
+		DE42A8201719F586003D7498 /* ECAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE42A81F1719F586003D7498 /* ECAppDelegate.m */; };
+		DE42A8221719F586003D7498 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DE42A8211719F586003D7498 /* Default.png */; };
+		DE42A8241719F586003D7498 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE42A8231719F586003D7498 /* Default@2x.png */; };
+		DE42A8261719F586003D7498 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE42A8251719F586003D7498 /* Default-568h@2x.png */; };
+		DE42A8291719F586003D7498 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE42A8271719F586003D7498 /* MainStoryboard_iPhone.storyboard */; };
+		DE42A82C1719F586003D7498 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE42A82A1719F586003D7498 /* MainStoryboard_iPad.storyboard */; };
+		DE42A82F1719F586003D7498 /* ECViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE42A82E1719F586003D7498 /* ECViewController.m */; };
+		DE42A8371719F587003D7498 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE42A8361719F587003D7498 /* SenTestingKit.framework */; };
+		DE42A8381719F587003D7498 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE42A80F1719F586003D7498 /* UIKit.framework */; };
+		DE42A8391719F587003D7498 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE42A8111719F586003D7498 /* Foundation.framework */; };
+		DE42A8411719F587003D7498 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE42A83F1719F587003D7498 /* InfoPlist.strings */; };
+		DE42A8441719F587003D7498 /* FervosityAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE42A8431719F587003D7498 /* FervosityAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE42A83A1719F587003D7498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE42A8041719F586003D7498 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE42A80B1719F586003D7498;
+			remoteInfo = FervosityApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE42A80C1719F586003D7498 /* FervosityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FervosityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE42A80F1719F586003D7498 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DE42A8111719F586003D7498 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DE42A8131719F586003D7498 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DE42A8171719F586003D7498 /* FervosityApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FervosityApp-Info.plist"; sourceTree = "<group>"; };
+		DE42A8191719F586003D7498 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DE42A81B1719F586003D7498 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE42A81D1719F586003D7498 /* FervosityApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FervosityApp-Prefix.pch"; sourceTree = "<group>"; };
+		DE42A81E1719F586003D7498 /* ECAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECAppDelegate.h; sourceTree = "<group>"; };
+		DE42A81F1719F586003D7498 /* ECAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECAppDelegate.m; sourceTree = "<group>"; };
+		DE42A8211719F586003D7498 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DE42A8231719F586003D7498 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DE42A8251719F586003D7498 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DE42A8281719F586003D7498 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		DE42A82B1719F586003D7498 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		DE42A82D1719F586003D7498 /* ECViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECViewController.h; sourceTree = "<group>"; };
+		DE42A82E1719F586003D7498 /* ECViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECViewController.m; sourceTree = "<group>"; };
+		DE42A8351719F587003D7498 /* FervosityAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FervosityAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE42A8361719F587003D7498 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DE42A83E1719F587003D7498 /* FervosityAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FervosityAppTests-Info.plist"; sourceTree = "<group>"; };
+		DE42A8401719F587003D7498 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DE42A8421719F587003D7498 /* FervosityAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FervosityAppTests.h; sourceTree = "<group>"; };
+		DE42A8431719F587003D7498 /* FervosityAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FervosityAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE42A8091719F586003D7498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE42A8101719F586003D7498 /* UIKit.framework in Frameworks */,
+				DE42A8121719F586003D7498 /* Foundation.framework in Frameworks */,
+				DE42A8141719F586003D7498 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE42A8311719F587003D7498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE42A8371719F587003D7498 /* SenTestingKit.framework in Frameworks */,
+				DE42A8381719F587003D7498 /* UIKit.framework in Frameworks */,
+				DE42A8391719F587003D7498 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE42A8031719F586003D7498 = {
+			isa = PBXGroup;
+			children = (
+				DE42A8151719F586003D7498 /* FervosityApp */,
+				DE42A83C1719F587003D7498 /* FervosityAppTests */,
+				DE42A80E1719F586003D7498 /* Frameworks */,
+				DE42A80D1719F586003D7498 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE42A80D1719F586003D7498 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE42A80C1719F586003D7498 /* FervosityApp.app */,
+				DE42A8351719F587003D7498 /* FervosityAppTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE42A80E1719F586003D7498 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE42A80F1719F586003D7498 /* UIKit.framework */,
+				DE42A8111719F586003D7498 /* Foundation.framework */,
+				DE42A8131719F586003D7498 /* CoreGraphics.framework */,
+				DE42A8361719F587003D7498 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE42A8151719F586003D7498 /* FervosityApp */ = {
+			isa = PBXGroup;
+			children = (
+				DE42A81E1719F586003D7498 /* ECAppDelegate.h */,
+				DE42A81F1719F586003D7498 /* ECAppDelegate.m */,
+				DE42A8271719F586003D7498 /* MainStoryboard_iPhone.storyboard */,
+				DE42A82A1719F586003D7498 /* MainStoryboard_iPad.storyboard */,
+				DE42A82D1719F586003D7498 /* ECViewController.h */,
+				DE42A82E1719F586003D7498 /* ECViewController.m */,
+				DE42A8161719F586003D7498 /* Supporting Files */,
+			);
+			path = FervosityApp;
+			sourceTree = "<group>";
+		};
+		DE42A8161719F586003D7498 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE42A8171719F586003D7498 /* FervosityApp-Info.plist */,
+				DE42A8181719F586003D7498 /* InfoPlist.strings */,
+				DE42A81B1719F586003D7498 /* main.m */,
+				DE42A81D1719F586003D7498 /* FervosityApp-Prefix.pch */,
+				DE42A8211719F586003D7498 /* Default.png */,
+				DE42A8231719F586003D7498 /* Default@2x.png */,
+				DE42A8251719F586003D7498 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE42A83C1719F587003D7498 /* FervosityAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE42A8421719F587003D7498 /* FervosityAppTests.h */,
+				DE42A8431719F587003D7498 /* FervosityAppTests.m */,
+				DE42A83D1719F587003D7498 /* Supporting Files */,
+			);
+			path = FervosityAppTests;
+			sourceTree = "<group>";
+		};
+		DE42A83D1719F587003D7498 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE42A83E1719F587003D7498 /* FervosityAppTests-Info.plist */,
+				DE42A83F1719F587003D7498 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE42A80B1719F586003D7498 /* FervosityApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE42A8471719F587003D7498 /* Build configuration list for PBXNativeTarget "FervosityApp" */;
+			buildPhases = (
+				DE42A8081719F586003D7498 /* Sources */,
+				DE42A8091719F586003D7498 /* Frameworks */,
+				DE42A80A1719F586003D7498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FervosityApp;
+			productName = FervosityApp;
+			productReference = DE42A80C1719F586003D7498 /* FervosityApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE42A8341719F587003D7498 /* FervosityAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE42A84A1719F587003D7498 /* Build configuration list for PBXNativeTarget "FervosityAppTests" */;
+			buildPhases = (
+				DE42A8301719F587003D7498 /* Sources */,
+				DE42A8311719F587003D7498 /* Frameworks */,
+				DE42A8321719F587003D7498 /* Resources */,
+				DE42A8331719F587003D7498 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE42A83B1719F587003D7498 /* PBXTargetDependency */,
+			);
+			name = FervosityAppTests;
+			productName = FervosityAppTests;
+			productReference = DE42A8351719F587003D7498 /* FervosityAppTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE42A8041719F586003D7498 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Early Clues LLC";
+			};
+			buildConfigurationList = DE42A8071719F586003D7498 /* Build configuration list for PBXProject "FervosityApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DE42A8031719F586003D7498;
+			productRefGroup = DE42A80D1719F586003D7498 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE42A80B1719F586003D7498 /* FervosityApp */,
+				DE42A8341719F587003D7498 /* FervosityAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE42A80A1719F586003D7498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE42A81A1719F586003D7498 /* InfoPlist.strings in Resources */,
+				DE42A8221719F586003D7498 /* Default.png in Resources */,
+				DE42A8241719F586003D7498 /* Default@2x.png in Resources */,
+				DE42A8261719F586003D7498 /* Default-568h@2x.png in Resources */,
+				DE42A8291719F586003D7498 /* MainStoryboard_iPhone.storyboard in Resources */,
+				DE42A82C1719F586003D7498 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE42A8321719F587003D7498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE42A8411719F587003D7498 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DE42A8331719F587003D7498 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE42A8081719F586003D7498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE42A81C1719F586003D7498 /* main.m in Sources */,
+				DE42A8201719F586003D7498 /* ECAppDelegate.m in Sources */,
+				DE42A82F1719F586003D7498 /* ECViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE42A8301719F587003D7498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE42A8441719F587003D7498 /* FervosityAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE42A83B1719F587003D7498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE42A80B1719F586003D7498 /* FervosityApp */;
+			targetProxy = DE42A83A1719F587003D7498 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE42A8181719F586003D7498 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE42A8191719F586003D7498 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DE42A8271719F586003D7498 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE42A8281719F586003D7498 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		DE42A82A1719F586003D7498 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE42A82B1719F586003D7498 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		DE42A83F1719F587003D7498 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE42A8401719F587003D7498 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE42A8451719F587003D7498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE42A8461719F587003D7498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE42A8481719F587003D7498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FervosityApp/FervosityApp-Prefix.pch";
+				INFOPLIST_FILE = "FervosityApp/FervosityApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DE42A8491719F587003D7498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FervosityApp/FervosityApp-Prefix.pch";
+				INFOPLIST_FILE = "FervosityApp/FervosityApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DE42A84B1719F587003D7498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FervosityApp.app/FervosityApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FervosityApp/FervosityApp-Prefix.pch";
+				INFOPLIST_FILE = "FervosityAppTests/FervosityAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DE42A84C1719F587003D7498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FervosityApp.app/FervosityApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FervosityApp/FervosityApp-Prefix.pch";
+				INFOPLIST_FILE = "FervosityAppTests/FervosityAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE42A8071719F586003D7498 /* Build configuration list for PBXProject "FervosityApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE42A8451719F587003D7498 /* Debug */,
+				DE42A8461719F587003D7498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE42A8471719F587003D7498 /* Build configuration list for PBXNativeTarget "FervosityApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE42A8481719F587003D7498 /* Debug */,
+				DE42A8491719F587003D7498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DE42A84A1719F587003D7498 /* Build configuration list for PBXNativeTarget "FervosityAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE42A84B1719F587003D7498 /* Debug */,
+				DE42A84C1719F587003D7498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE42A8041719F586003D7498 /* Project object */;
+}
