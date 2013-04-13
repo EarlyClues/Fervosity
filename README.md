@@ -13,3 +13,8 @@ User would be able to select "I need a miracle" setting, kind of like the Google
 
 Phone would periodically remind them to renew their prayer request, if it has not been fulfilled. If it has been, user would be required to deliver on original terms set forth in prayer (offering, etc) or make a public announcement (via website) kind of like people sometimes do to saints in the newspaper. 
 
+Program could also return "tentative results" in the form of tarot card, i ching, randomly selected google image...
+
+Also thought that during the "prayer moment" the screen could formulate random sort of pareidolic imagery which you could use to sort of divine shapes out of like an inkblot, and which would allow your mind to wander a little into the intuitive state
+
+
