@@ -36,7 +36,8 @@
 }
 
 -(void)pray:(NSString*)prayerText {
-	
+	// This is where the rubber meets the road. We need a module here that can take the prayer request text
+	// and turn vaporware into self-aware.
 }
 
 @end
