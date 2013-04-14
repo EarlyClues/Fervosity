@@ -10,4 +10,10 @@
 
 @interface ECViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *prayerButton;
+@property (strong, nonatomic) IBOutlet UITextView *prayerText;
+
+-(IBAction)submitPrayer;
+-(void)pray:(NSString*)prayerText;
+
 @end

@@ -12,7 +12,10 @@
 
 @end
 
+
 @implementation ECViewController
+
+@synthesize prayerButton, prayerText;
 
 - (void)viewDidLoad
 {
@@ -24,6 +27,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)submitPrayer {
+	[self pray:prayerText.text];
+	self.prayerText.text = @"Prayer Submitted!";
+	[self.view endEditing:YES];
+}
+
+-(void)pray:(NSString*)prayerText {
+	
 }
 
 @end
