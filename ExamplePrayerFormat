@@ -1,0 +1,37 @@
+I ask [DropDownList /* Who or what is your prayer directed to? */]:
+
+- God(s)
+- The Universe
+- The Future
+- The Ancestors
+- Supernatural Powers
+- Other
+
+For [TextBox /* For what or whom are you praying? */]:
+
+____________
+
+In whose name [DropDownBox /* By what authority, intercessory agent or transmission channel do you submit this prayerrequest? */]:
+
+- Jesus
+- Allah
+- Buddha
+- Lucifer
+- Elvis
+- My own name
+- Under other authority
+
+In exchange for [DropDownBox; possible TextField under 'Other gift' option /* What are you offering as payment or tribute to receiving deity? */]:
+
+- Unending devotion
+- Sacrificial offering
+- Public announcement
+- Trance/possession
+- Other gift
+
+
+Select: [DropDownBox /* Uncertain of best wording for 'execute' or 'send' section title... */
+
+- Amen.
+- So mote it be.
+- Make it so.
