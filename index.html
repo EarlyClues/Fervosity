@@ -1,0 +1,338 @@
+<!-- //Fervosity HTML5/Javascript code to be ported to Phonegap -->
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>FERVOSITY</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <center> -->
+    <!--     <br />
+        <br /> -->
+    <div style="position:relative;width:500px;height:500px">
+    <canvas id="myCanvas" width="500" height="500" style="border:1px dotted black" style="z-index:1;position:absolute;left:0px;top:0px;"></canvas>
+
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      //Degree symbol starting position 
+
+      var centerX = canvas.width / 4; //Defines X axis center point coordinates for circle
+      var centerY = canvas.height / 4; //Defines Y axis center point
+      var radius = 30;
+
+      // Primary "Degree" Symbol Circle
+
+      context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = 'white';
+      context.fill();
+      context.lineWidth = 10;
+      context.strokeStyle = '#000000';
+     context.stroke();
+
+
+
+
+   
+         //Text "F"
+
+      context.font = 'bold 144pt Arial';
+        context.fillStyle = 'black';
+
+      context.fillText('F', 190, 320);
+
+      //Text "Fervosity"
+
+      context.font = 'bold 14pt Arial';
+        context.fillStyle = 'black';
+
+      context.fillText('F E R V O S I T Y', 170, 370);
+ 
+
+    //Add an event listener for a mouse click on the canvas
+
+    canvas.addEventListener('click', clickReporter, false);
+
+  function clickReporter(e) {
+
+
+ 
+    // If mouse is clicked, run animation
+
+      //Borrowed orbit code from: http://jsfiddle.net/wY8d7/1/
+    
+      if ( !window.requestAnimationFrame ) {
+    window.requestAnimationFrame = ( function() {
+
+        return window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function( /* function FrameRequestCallback */ callback, /* DOMElement Element */ element ) {
+
+            window.setTimeout( callback, 1000 / 60 );
+
+                };
+
+            } )();
+        }
+
+
+        var w = canvas.width;
+        var h = canvas.height;
+
+        var circle = function(color, r) {
+            context.fillStyle = color;
+            
+            context.beginPath();
+            context.arc(0, 0, r, 0, 2 * Math.PI, true);
+            context.closePath();
+            
+            context.fill();
+        }
+
+        var i = 0;
+        var redraw = function() {
+            context.save();
+
+         // paint bg
+            context.fillStyle = 'white';
+            context.fillRect(0, 0, w, h);
+
+            // set origin to center (Center of orbit)
+            context.translate(w / 2, h / 2); //divides width and height of canvas by 2, to find the center
+
+
+            //Draw central ring, which orbiting circle follows
+
+            circle('white', 180);
+            context.fillStyle = 'white';
+            context.fill();
+            context.lineWidth = 10;
+            context.strokeStyle = '#999';
+            context.rotate(Math.PI * 1.25);
+            context.stroke();
+            
+            // rotate + move along x
+            context.rotate(Math.PI / -180 * i);
+            context.translate(190, 0);
+
+
+
+            
+
+              // draw white ring around planet
+            circle('white', 40);
+            context.fill();
+            context.lineWidth = 3;
+            context.strokeStyle = 'white';
+            context.stroke();
+
+
+
+            // draw planet
+            circle('black', 30);
+            context.fillStyle = 'white';
+            context.fill();
+            context.lineWidth = 10;
+            context.strokeStyle = 'black';
+            context.stroke();
+            
+            context.restore();
+            
+            i++;
+
+
+
+
+            //Text "F"
+
+              context.font = 'bold 144pt Arial';
+                context.fillStyle = 'black';
+
+              context.fillText('F', 190, 320);
+
+
+
+
+
+
+         
+            
+            window.requestAnimationFrame(redraw);
+        };
+
+        window.requestAnimationFrame(redraw);
+
+
+//Pie timer
+
+function Timer(duration /* in ms */ , props) {
+    this.ontick = props && typeof props.ontick === "function" ? props.ontick : function() {};
+    this.onend = props && typeof props.onend === "function" ? props.onend : function() {};
+    this.interval = props && typeof props.interval === "number" ? props.interval : 1000 / 10;
+    this.elapsed = 0;
+
+    var running = false,
+      start, end, self = this;
+
+    this.start = function() {
+      if (running) return self;
+
+      start = new Date().getTime();
+      end = start + duration;
+      tick();
+      running = true;
+
+      return self;
+    };
+
+    function tick() {
+      var now = new Date().getTime();
+      self.ontick.call(self);
+      self.elapsed = now - start;
+
+      if (now < end) setTimeout(tick, self.interval);
+      else self.onend.call(self);
+    }
+  }
+
+var can = document.getElementById("canvas"),
+  ctx = can.getContext('2d'),
+  sta = -Math.PI / 2,
+  dur = 10 * 1000; //Duration control
+
+can.width = 100;
+can.height = 100;
+document.body.appendChild(can);
+ctx.font = "normal 20px Arial"; //Text size control
+
+var myTimer = new Timer(dur, {
+  ontick: function () {
+    var pct = this.elapsed / dur,
+      sec = Math.ceil((dur - this.elapsed) / 1000),
+      wid = ctx.measureText(sec).width;
+
+    ctx.clearRect(0, 0, 100, 100);
+
+    ctx.fillStyle = "#f00";
+    ctx.arc(50, 50, 20, 0, 2 * Math.PI); //Third item in controls size of circle
+    ctx.fill();
+
+
+    ctx.fillStyle = "#fff";
+    ctx.beginPath();
+    ctx.moveTo(50, 50);
+    ctx.arc(50, 50, 20, sta, sta + 2 * Math.PI * pct);
+    ctx.fill();
+
+    //Trying to control border around timer circle
+
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "white";
+    ctx.stroke();
+
+    // ctx.fillStyle = "#111";
+    // ctx.fillText(sec, 50 - wid / 2 + 1, 61); //Shadow seconds display
+    // ctx.fillStyle = "#eee";
+    // ctx.fillText(sec, 50 - wid / 2, 60); //Displays seconds inside the circle
+  },
+  onend: function () {
+    this.ontick();
+  },
+  interval: 1000 / 60
+}).start();
+
+var timer2 = new Timer(dur);
+timer2.ontick = function () {
+  console.log(this.elapsed);
+};
+timer2.start();
+
+
+        //Grace meter && New canvas element
+
+
+
+
+        function Animation( opt ) {
+                var contxt = opt.canvas.getContext("2d");
+                var handle = 0;
+                var current = 0;
+                var percent = 0;
+
+                this.start = function( percentage ) {
+                    percent = percentage;
+                    // start the interval
+                    handle = setInterval( draw, opt.interval );
+                }
+
+                // fill the background color
+                contxt.fillStyle = opt.backcolor;
+                contxt.fillRect( 0, 0, opt.width, opt.height );
+
+                // draw a circle
+                contxt.arc( opt.width / 2, opt.height / 2, opt.radius, 0, 2 * Math.PI, false );
+                contxt.lineWidth = opt.linewidth;
+                contxt.strokeStyle = opt.circlecolor;
+                contxt.stroke();
+
+                function draw() {
+                    // make a circular clipping region
+                    contxt.beginPath();
+                    contxt.arc( opt.width / 2, opt.height / 2, opt.radius-(opt.linewidth/2), 0, 2 * Math.PI, false );
+                    contxt.clip();
+
+                    // draw the current rectangle
+                    var height = ((100-current)*opt.radius*2)/100 + (opt.height-(opt.radius*2))/2;
+                    contxt.fillStyle = opt.fillcolor;
+                    contxt.fillRect( 0, height, opt.width, opt.radius*2 );
+
+                    // clear the interval when the animation is over
+                    if ( current < percent ) current+=opt.step;
+                    else clearInterval(handle);
+                }
+            }
+
+            // create the new object, add options, and start the animation with desired percentage
+            var canvas2 = document.getElementById("grace");
+            new Animation({
+                'canvas': canvas2,
+                'width': canvas2.width,
+                'height': canvas2.height,
+                'radius': 20,
+                'linewidth': 1,        
+                'interval': 20,
+                'step': .20, //Speed of fill
+                'backcolor': '#fff',
+                'circlecolor': 'white',
+                'fillcolor': 'yellow'
+            }).start( 100 ); //Determines how much of shape is filled
+
+            //End Grace meter
+
+
+
+        } //Closes clickReporter activity section
+
+    </script>
+
+        <canvas id="canvas" width="100" height="100" style="z-index:20;position:absolute;left:200px;top:320px;"></canvas>
+
+        <canvas id="grace" width="60" height="60" style="z-index:30;position:absolute;left:220px;top:110px;"></canvas>
+
+
+    </div>
+    <!-- </center> -->
+  </body>
+</html>
